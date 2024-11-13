@@ -1,23 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f1f8ff"
+    tools:ignore="ExtraText"> <!-- Soft blue background -->
 
+    <!-- Title -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_height="99dp"
         android:gravity="center"
         android:text="Notes"
-        android:textSize="24sp" />
+        android:textColor="#007BFF"
+        android:textSize="28sp"
+        tools:ignore="HardcodedText" /> <!-- Blue text -->
+     />
 
+    <!-- Add Note Button -->
     <Button
         android:id="@+id/btnAddNote"
-        android:text="Добави бележка"
+        android:text="Add Note"
+        android:textColor="#fff"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:backgroundTint="#007BFF"
+        tools:ignore="HardcodedText" /> <!-- Blue background for button -->
+    />
 
+    <!-- ListView for displaying notes -->
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#d3d3d3"
+        />
 </LinearLayout>

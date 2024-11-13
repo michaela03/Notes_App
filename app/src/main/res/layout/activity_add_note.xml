@@ -6,15 +6,15 @@
 
     <EditText
         android:id="@+id/editTitle"
-        android:hint="Заглавие"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="82dp"
+        android:hint="Заглавие" />
 
     <EditText
         android:id="@+id/editDescription"
-        android:hint="Описание"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="160dp"
+        android:hint="Описание"
         android:inputType="textMultiLine"
         android:minLines="5" />
 
@@ -23,7 +23,8 @@
         android:text="Запази"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#007BFF"/>
 
     <!-- Бутон за връщане назад -->
     <Button
@@ -31,6 +32,7 @@
         android:text="Назад"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#007BFF"/>
 
 </LinearLayout>

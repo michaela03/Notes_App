@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Blue Shades -->
+    <color name="blue_light">#ADD8E6</color> <!-- Light Blue -->
+    <color name="blue_medium">#4682B4</color> <!-- Steel Blue -->
+    <color name="blue_dark">#00008B</color> <!-- Dark Blue -->
+    <color name="blue_accent">#007BFF</color> <!-- Bright Blue (for accents) -->
 </resources>

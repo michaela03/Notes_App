@@ -6,22 +6,24 @@
 
     <EditText
         android:id="@+id/editTitle"
-        android:hint="Заглавие"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="68dp"
+        android:hint="Title" />
 
     <EditText
         android:id="@+id/editDescription"
-        android:hint="Описание"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="243dp"
+        android:hint="Description"
         android:inputType="textMultiLine"
         android:minLines="5" />
 
     <Button
         android:id="@+id/btnUpdate"
-        android:text="Обнови"
+        android:text="Save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#007BFF"
+        />
 </LinearLayout>
