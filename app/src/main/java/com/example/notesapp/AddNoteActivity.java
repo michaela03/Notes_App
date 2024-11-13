@@ -38,10 +38,10 @@ public class AddNoteActivity extends AppCompatActivity {
             String description = editDescription.getText().toString().trim();
 
             if (title.isEmpty() || description.isEmpty()) {
-                Toast.makeText(this, "Моля, попълнете всички полета", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter info", Toast.LENGTH_SHORT).show();
             } else {
                 db.addNote(title, description);
-                Toast.makeText(this, "Бележката е добавена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Note is succesfully added", Toast.LENGTH_SHORT).show();
 
                 // Връщане към MainActivity след добавяне на бележка
                 Intent intent = new Intent(this, MainActivity.class);

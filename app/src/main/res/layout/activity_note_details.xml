@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Заглавие на бележката"
+        android:text="Note titile"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -17,7 +17,7 @@
         android:id="@+id/textDescription"
         android:layout_width="match_parent"
         android:layout_height="321dp"
-        android:text="Описание на бележката"
+        android:text="Note Description"
         android:textSize="18sp" />
 
 </LinearLayout>

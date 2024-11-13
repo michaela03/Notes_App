@@ -37,11 +37,11 @@ public class NoteDetailsActivity extends AppCompatActivity {
                 textTitle.setText(note.getTitle());
                 textDescription.setText(note.getDescription());
             } else {
-                Toast.makeText(this, "Бележката не е намерена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Note not found", Toast.LENGTH_SHORT).show();
                 finish();
             }
         } else {
-            Toast.makeText(this, "Невалиден ID на бележка", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Invalid note ID", Toast.LENGTH_SHORT).show();
             finish();
         }
     }

@@ -39,7 +39,7 @@ public class EditNoteActivity extends AppCompatActivity {
                 editTitle.setText(note.getTitle());
                 editDescription.setText(note.getDescription());
             } else {
-                Toast.makeText(this, "Бележката не е намерена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Note is not found", Toast.LENGTH_SHORT).show();
                 finish();
             }
         }
@@ -50,10 +50,10 @@ public class EditNoteActivity extends AppCompatActivity {
             String updatedDescription = editDescription.getText().toString().trim();
 
             if (updatedTitle.isEmpty() || updatedDescription.isEmpty()) {
-                Toast.makeText(this, "Моля, попълнете всички полета", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter", Toast.LENGTH_SHORT).show();
             } else {
                 db.updateNote(noteId, updatedTitle, updatedDescription);
-                Toast.makeText(this, "Бележката е обновена", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Note is added", Toast.LENGTH_SHORT).show();
 
                 // Връщане към MainActivity след обновяване
                 Intent intent = new Intent(this, MainActivity.class);

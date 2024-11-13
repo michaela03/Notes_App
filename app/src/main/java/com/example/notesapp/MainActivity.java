@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void showOptionsDialog(Note note) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Изберете опция")
-                .setItems(new String[]{"Редактирай", "Изтрий"}, (dialog, which) -> {
+        builder.setTitle("Choose option")
+                .setItems(new String[]{"Edit", "Delete"}, (dialog, which) -> {
                     if (which == 0) {
                         Intent intent = new Intent(this, EditNoteActivity.class);
                         intent.putExtra("noteId", note.getId());
